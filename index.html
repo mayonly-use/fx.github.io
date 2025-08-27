@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  
+
+  <meta charset="UTF-8" />
+  <title>Forex Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      min-height: 100vh;
+      background: #0d170f;
+      color: white;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 250px;
+      background-color: #111c13;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      border-right: 2px solid #1e2a1f;
+    }
+
+    .sidebar h2 {
+      color: #c0ff2e;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      user-select: none;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: #ccc;
+      font-size: 1rem;
+      padding: 10px 15px;
+      border-radius: 8px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #c0ff2e;
+      color: #000;
+    }
+
+    /* Main layout */
+    .main-content {
+      margin-left: 250px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    header {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #1e2a1f;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #c0ff2e;
+      letter-spacing: 2px;
+    }
+
+    .header-buttons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .header-buttons button {
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid #c0ff2e;
+      background: transparent;
+      color: #c0ff2e;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .header-buttons button:hover {
+      background-color: #c0ff2e;
+      color: #000;
+    }
+
+    /* Content */
+    .content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .content h1 {
+      font-size: 3rem;
+      color: #c0ff2e;
+    }
+
+    /* Founder Section with color */
+    .founder-section {
+      background-color: #1a2e1a;
+      padding: 50px 30px;
+      text-align: center;
+      border-radius: 20px;
+      margin: 40px;
+      box-shadow: 0 0 20px rgba(0, 255, 100, 0.1);
+    }
+
+    .founder-section h2 {
+      color: #c0ff2e;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .founder-section p {
+      font-size: 1.1rem;
+      color: #eee;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .founder-section a {
+      display: inline-block;
+      margin-top: 20px;
+      color: #c0ff2e;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Portfolio</h2>
+    <a href="#">Dashboard</a>
+    <a href="https://www.tradingview.com/chart/" target="_blank">Live Market</a> <!-- 🔗 UPDATED -->
+    <a href="#">Open Positions</a>
+    <a href="#">Trade History</a>
+    <a href="#">Analytics</a>
+    <a href="#">Risk Management</a>
+    <a href="courses.html">Courses</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="main-content">
+    <!-- Header -->
+    <header>
+      <div class="logo">Forex Empire</div>
+      <div class="header-buttons">
+        <button onclick="location.href='login.html'">Login</button>
+        <button onclick="location.href='signup.html'">Sign Up</button>
+      </div>
+    </header>
+
+    <!-- Centered Content -->
+    <div class="content">
+      <h1>Trading Academy</h1>
+    </div>
+
+    <!-- Colored Founder Section -->
+    <div class="founder-section">
+      <h2>Meet the Founder</h2>
+      <p>
+        This platform was founded by <strong>Arsath</strong> with a vision to guide aspiring traders through professional strategies, risk management, and educational resources. The goal is to build consistent profitability for retail traders.
+      </p>
+      <a href="mailto:arsath@example.com">📧 Contact: arsathspr726@gmail.com</a>
+    </div>
+  </div>
+  <body>
+  <!-- All your HTML content -->
+
+  <script>
+    const auth = firebase.auth();
+
+    auth.onAuthStateChanged(user => {
+      if (!user) {
+        window.location.href = 'login.html';
+      }
+    });
+  </script>
+</body>
+</html>
+
+
+</body>
+</html>
+
+
+
+

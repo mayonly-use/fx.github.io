@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Courses - Forex Empire</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d170f;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #111c13;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #1e2a1f;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #c0ff2e;
+    }
+
+    .back-btn {
+      padding: 8px 16px;
+      background: transparent;
+      border: 1px solid #c0ff2e;
+      color: #c0ff2e;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #c0ff2e;
+      color: #000;
+    }
+
+    .courses-section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .courses-section h1 {
+      color: #c0ff2e;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .course-card {
+      background-color: #1a2e1a;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(192, 255, 46, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .course-title {
+      color: #c0ff2e;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 10px;
+      user-select: none;
+    }
+
+    .course-description {
+      color: #ddd;
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    .course-videos {
+      display: none;
+    }
+
+    .course-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 5px;
+      box-shadow: 0 0 10px #c0ff2e;
+    }
+
+    .video-caption {
+      font-size: 0.9rem;
+      color: #aaa;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Forex Empire</div>
+    <button class="back-btn" onclick="window.location.href='index.html'">← Back to Home</button>
+  </header>
+
+  <section class="courses-section">
+    <h1>Forex Learning Courses</h1>
+    <div class="courses-grid">
+
+      <!-- Beginner's Guide Course -->
+      <div class="course-card">
+        <div class="course-title" onclick="toggleVideos(this)">Beginner's Guide to Forex</div>
+        <div class="course-description">
+          This course is your gateway into the forex market. Learn what forex is, how it works, and how to start.
+        </div>
+        <div class="course-videos">
+          <a href="https://youtu.be/nnNwGOBvIJA?si=BCrR6q9PyckuU9Rp" target="_blank">
+            <img src="https://img.youtube.com/vi/nnNwGOBvIJA/hqdefault.jpg" alt="Lesson 1" />
+          </a>
+          <div class="video-caption">📘 Lesson 1: What is Forex?</div>
+
+          <a href="https://youtu.be/TXSGCO8tvQQ?si=2NUYakFp7cAs8xP2" target="_blank">
+            <img src="https://img.youtube.com/vi/TXSGCO8tvQQ/hqdefault.jpg" alt="Lesson 2" />
+          </a>
+          <div class="video-caption">📘 Lesson 2: How Forex Trading Works</div>
+        </div>
+      </div>
+
+      <!-- Technical Analysis Mastery Course -->
+      <div class="course-card">
+        <div class="course-title" onclick="toggleVideos(this)">Technical Analysis Mastery</div>
+        <div class="course-description">
+          Learn to read charts, indicators, and patterns to make informed trading decisions.
+        </div>
+        <div class="course-videos">
+          <a href="https://www.youtube.com/watch?v=TCzAgDgXl2I&list=PLQ3DdyTpvhEpyCL0q2iYN9o5RiEOE8gy-&index=1" target="_blank">
+            <img src="https://img.youtube.com/vi/TCzAgDgXl2I/hqdefault.jpg" alt="Technical Video 1" />
+          </a>
+          <div class="video-caption">📘 Technical Analysis Video 1</div>
+
+          <a href="https://www.youtube.com/watch?v=EjREV_spuJ8&list=PLQ3DdyTpvhEpyCL0q2iYN9o5RiEOE8gy-&index=2" target="_blank">
+            <img src="https://img.youtube.com/vi/EjREV_spuJ8/hqdefault.jpg" alt="Technical Video 2" />
+          </a>
+          <div class="video-caption">📘 Technical Analysis Video 2</div>
+
+          <a href="https://www.youtube.com/watch?v=UDyr968eEZw&list=PLQ3DdyTpvhEpyCL0q2iYN9o5RiEOE8gy-&index=3" target="_blank">
+            <img src="https://img.youtube.com/vi/UDyr968eEZw/hqdefault.jpg" alt="Technical Video 3" />
+          </a>
+          <div class="video-caption">📘 Technical Analysis Video 3</div>
+
+          <a href="https://www.youtube.com/watch?v=2tiZ57DPKGQ&list=PLQ3DdyTpvhEpyCL0q2iYN9o5RiEOE8gy-&index=4" target="_blank">
+            <img src="https://img.youtube.com/vi/2tiZ57DPKGQ/hqdefault.jpg" alt="Technical Video 4" />
+          </a>
+          <div class="video-caption">📘 Technical Analysis Video 4</div>
+
+          <a href="https://www.youtube.com/watch?v=uO7o4t874Bg&list=PLQ3DdyTpvhEpyCL0q2iYN9o5RiEOE8gy-&index=5" target="_blank">
+            <img src="https://img.youtube.com/vi/uO7o4t874Bg/hqdefault.jpg" alt="Technical Video 5" />
+          </a>
+          <div class="video-caption">📘 Technical Analysis Video 5</div>
+
+          <a href="https://www.youtube.com/watch?v=psTMgRm7rYI&list=PLQ3DdyTpvhEpyCL0q2iYN9o5RiEOE8gy-&index=6" target="_blank">
+            <img src="https://img.youtube.com/vi/psTMgRm7rYI/hqdefault.jpg" alt="Technical Video 6" />
+          </a>
+          <div class="video-caption">📘 Technical Analysis Video 6</div>
+
+          <a href="https://www.youtube.com/watch?v=OeshLMTRRRE&list=PLQ3DdyTpvhEpyCL0q2iYN9o5RiEOE8gy-&index=7" target="_blank">
+            <img src="https://img.youtube.com/vi/OeshLMTRRRE/hqdefault.jpg" alt="Technical Video 7" />
+          </a>
+          <div class="video-caption">📘 Technical Analysis Video 7</div>
+
+          <a href="https://www.youtube.com/watch?v=HL8EmRa-e9M&list=PLQ3DdyTpvhEpyCL0q2iYN9o5RiEOE8gy-&index=8" target="_blank">
+            <img src="https://img.youtube.com/vi/HL8EmRa-e9M/hqdefault.jpg" alt="Technical Video 8" />
+          </a>
+          <div class="video-caption">📘 Technical Analysis Video 8</div>
+
+          <a href="https://www.youtube.com/watch?v=rkUqcAJy_XE&list=PLQ3DdyTpvhEpyCL0q2iYN9o5RiEOE8gy-&index=9" target="_blank">
+            <img src="https://img.youtube.com/vi/rkUqcAJy_XE/hqdefault.jpg" alt="Technical Video 9" />
+          </a>
+          <div class="video-caption">📘 Technical Analysis Video 9</div>
+
+          <a href="https://www.youtube.com/watch?v=jZcirqWnbO8&list=PLQ3DdyTpvhEpyCL0q2iYN9o5RiEOE8gy-&index=10" target="_blank">
+            <img src="https://img.youtube.com/vi/jZcirqWnbO8/hqdefault.jpg" alt="Technical Video 10" />
+          </a>
+          <div class="video-caption">📘 Technical Analysis Video 10</div>
+
+          <a href="https://www.youtube.com/watch?v=ar8_Zh_2_x4&list=PLQ3DdyTpvhEpyCL0q2iYN9o5RiEOE8gy-&index=11" target="_blank">
+            <img src="https://img.youtube.com/vi/ar8_Zh_2_x4/hqdefault.jpg" alt="Technical Video 11" />
+          </a>
+          <div class="video-caption">📘 Technical Analysis Video 11</div>
+
+          <a href="https://www.youtube.com/watch?v=117Yw5mJHoQ&list=PLQ3DdyTpvhEpyCL0q2iYN9o5RiEOE8gy-&index=12" target="_blank">
+            <img src="https://img.youtube.com/vi/117Yw5mJHoQ/hqdefault.jpg" alt="Technical Video 12" />
+          </a>
+          <div class="video-caption">📘 Technical Analysis Video 12</div>
+
+          <a href="https://www.youtube.com/watch?v=V8HDzauDC08&list=PLQ3DdyTpvhEpyCL0q2iYN9o5RiEOE8gy-&index=13" target="_blank">
+            <img src="https://img.youtube.com/vi/V8HDzauDC08/hqdefault.jpg" alt="Technical Video 13" />
+          </a>
+          <div class="video-caption">📘 Technical Analysis Video 13</div>
+
+          <a href="https://www.youtube.com/watch?v=fi9zRGGhp90&list=PLQ3DdyTpvhEpyCL0q2iYN9o5RiEOE8gy-&index=14" target="_blank">
+            <img src="https://img.youtube.com/vi/fi9zRGGhp90/hqdefault.jpg" alt="Technical Video 14" />
+          </a>
+          <div class="video-caption">📘 Technical Analysis Video 14</div>
+
+          <a href="https://www.youtube.com/watch?v=jmNoYnRVAlc&list=PLQ3DdyTpvhEpyCL0q2iYN9o5RiEOE8gy-&index=15" target="_blank">
+            <img src="https://img.youtube.com/vi/jmNoYnRVAlc/hqdefault.jpg" alt="Technical Video 15" />
+          </a>
+          <div class="video-caption">📘 Technical Analysis Video 15</div>
+
+          <a href="https://www.youtube.com/watch?v=vSPRA_eWzgs&list=PLQ3DdyTpvhEpyCL0q2iYN9o5RiEOE8gy-&index=16" target="_blank">
+            <img src="https://img.youtube.com/vi/vSPRA_eWzgs/hqdefault.jpg" alt="Technical Video 16" />
+          </a>
+          <div class="video-caption">📘 Technical Analysis Video 16</div>
+
+          <a href="https://www.youtube.com/watch?v=MnNNAoUOZiQ&list=PLQ3DdyTpvhEpyCL0q2iYN9o5RiEOE8gy-&index=17" target="_blank">
+            <img src="https://img.youtube.com/vi/MnNNAoUOZiQ/hqdefault.jpg" alt="Technical Video 17" />
+          </a>
+          <div class="video-caption">📘 Technical Analysis Video 17</div>
+
+          <a href="https://www.youtube.com/watch?v=TgnFxXrI8jg&list=PLQ3DdyTpvhEpyCL0q2iYN9o5RiEOE8gy-&index=18" target="_blank">
+            <img src="https://img.youtube.com/vi/TgnFxXrI8jg/hqdefault.jpg" alt="Technical Video 18" />
+          </a>
+          <div class="video-caption">📘 Technical Analysis Video 18</div>
+
+          <a href="https://www.youtube.com/watch?v=OgR9WP7FWTQ&list=PLQ3DdyTpvhEpyCL0q2iYN9o5RiEOE8gy-&index=19" target="_blank">
+            <img src="https://img.youtube.com/vi/OgR9WP7FWTQ/hqdefault.jpg" alt="Technical Video 19" />
+          </a>
+          <div class="video-caption">📘 Technical Analysis Video 19</div>
+
+          <a href="https://www.youtube.com/watch?v=TZwMcZsvn6E&list=PLQ3DdyTpvhEpyCL0q2iYN9o5RiEOE8gy-&index=20" target="_blank">
+            <img src="https://img.youtube.com/vi/TZwMcZsvn6E/hqdefault.jpg" alt="Technical Video 20" />
+          </a>
+          <div class="video-caption">📘 Technical Analysis Video 20</div>
+        </div>
+      </div>
+
+      <!-- Risk & Money Management Course -->
+      <div class="course-card">
+        <div class="course-title" onclick="toggleVideos(this)">Risk & Money Management</div>
+        <div class="course-description">
+          Discover how to protect your capital and grow your account with smart strategies.
+        </div>
+        <div class="course-videos">
+          <a href="https://youtu.be/65JJfzshI8M?si=K8y6mXWfUIca6rjZ" target="_blank">
+            <img src="https://img.youtube.com/vi/65JJfzshI8M/hqdefault.jpg" alt="Risk Video 1" />
+          </a>
+          <div class="video-caption">📘 Risk & Money Management Video 1</div>
+
+          <a href="https://youtu.be/c5TdLJgvzG4?si=Jq9LTwwsycmPsZ9n" target="_blank">
+            <img src="https://img.youtube.com/vi/c5TdLJgvzG4/hqdefault.jpg" alt="Risk Video 2" />
+          </a>
+          <div class="video-caption">📘 Risk & Money Management Video 2</div>
+
+          <a href="https://youtu.be/EwxuQjUfFuA?si=v-WbtTZyNZes9b0a" target="_blank">
+            <img src="https://img.youtube.com/vi/EwxuQjUfFuA/hqdefault.jpg" alt="Risk Video 3" />
+          </a>
+          <div class="video-caption">📘 Risk & Money Management Video 3</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    function toggleVideos(titleElement) {
+      const card = titleElement.parentElement;
+      const videos = card.querySelector('.course-videos');
+      if (videos.style.display === 'block') {
+        videos.style.display = 'none';
+      } else {
+        videos.style.display = 'block';
+      }
+    }
+  </script>
+
+</body>
+</html>
