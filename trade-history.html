@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trade History - Forex Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0d170f;
+      color: white;
+    }
+
+    .container {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #c0ff2e;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #111c13;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 14px;
+      text-align: center;
+      border-bottom: 1px solid #1e2a1f;
+    }
+
+    th {
+      background: #1d2d1d;
+      color: #c0ff2e;
+      font-size: 1.1rem;
+    }
+
+    tr:hover {
+      background: #1a2e1a;
+    }
+
+    .profit {
+      color: #00ff66;
+      font-weight: bold;
+    }
+
+    .loss {
+      color: #ff3333;
+      font-weight: bold;
+    }
+
+    .back-btn {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: transparent;
+      border: 2px solid #c0ff2e;
+      color: #c0ff2e;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #c0ff2e;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Trade History</h1>
+
+    <table>
+      <tr>
+        <th>Date</th>
+        <th>Pair</th>
+        <th>Type</th>
+        <th>Lot Size</th>
+        <th>Profit / Loss</th>
+      </tr>
+
+      <tr>
+        <td>2025-01-05</td>
+        <td>EUR/USD</td>
+        <td>Buy</td>
+        <td>0.10</td>
+        <td class="profit">+25 pips</td>
+      </tr>
+
+      <tr>
+        <td>2025-01-04</td>
+        <td>XAU/USD (Gold)</td>
+        <td>Sell</td>
+        <td>0.05</td>
+        <td class="loss">-10 pips</td>
+      </tr>
+
+      <tr>
+        <td>2025-01-03</td>
+        <td>GBP/JPY</td>
+        <td>Buy</td>
+        <td>0.20</td>
+        <td class="profit">+80 pips</td>
+      </tr>
+
+      <tr>
+        <td>2025-01-02</td>
+        <td>USD/JPY</td>
+        <td>Sell</td>
+        <td>0.15</td>
+        <td class="loss">-15 pips</td>
+      </tr>
+    </table>
+
+    <a class="back-btn" href="index.html">⬅ Back to Dashboard</a>
+  </div>
+
+</body>
+</html>
